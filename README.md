@@ -54,3 +54,6 @@ new Vue({
   render: h => h(App)
 })
 完整组件列表和引入方式（完整组件列表以 components.json 为准）
+
+
+使用插件编写网站
