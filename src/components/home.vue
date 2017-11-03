@@ -1,9 +1,6 @@
 <template>
-  <div id="app">
-  	 <h1>回家</h1>
-    <headerdiv logo="Wise"></headerdiv>
+  <div id="app"> 
     <router-view></router-view>
-    <footerdiv></footerdiv>   
   </div>
 </template>
 
@@ -12,7 +9,7 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: 'LMBL',
+      msg: '',
       input: ''
     }
   }
@@ -21,5 +18,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+	h1,h2{font-size: 40px;color:red;}
 </style>
