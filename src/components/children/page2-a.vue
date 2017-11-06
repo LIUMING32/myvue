@@ -9,7 +9,7 @@ export default {
   name: 'headerDiv',
   data () {
     return {
-      navs: '这里是page1'
+      navs: '这里是page2子页面'
     }
   }
 }

@@ -1,6 +1,6 @@
 <template>
-	<header class="header">		
-		{{navs}}
+	<header class="header">	
+		<h1>{{ navs }}</h1>		
 	</header>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   name: 'headerDiv',
   data () {
     return {
-      navs: '这里是page1'
+      navs: '登录成功'
     }
   }
 }

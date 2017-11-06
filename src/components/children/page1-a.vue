@@ -9,7 +9,7 @@ export default {
   name: 'headerDiv',
   data () {
     return {
-      navs: 'LMBL'
+      navs: '这里是page2子页面'
     }
   }
 }
