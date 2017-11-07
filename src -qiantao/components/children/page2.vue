@@ -1,12 +1,14 @@
 <template>
 	<header class="header">		
-		{{navs}}
+		{{navs}}		
 	</header>
+
 </template>
 
 <script>
 export default {
   name: 'headerDiv',
+  inpuTxt:'',
   data () {
     return {
       navs: '这里是page2'

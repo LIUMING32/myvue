@@ -2,12 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home'
 import Header from '@/components/header'
-import Login from '@/components/children/login'
-import First from '@/components/children/login/first'
-import Page1 from '@/components/children/page1'
-import Page2 from '@/components/children/page2'
-import Page1a from '@/components/children/page1-a'
-import Page2a from '@/components/children/page2-a'
+import Page from '@/components/children/page/shouye'
+import Page2 from '@/components/children/page2/xiewz'
+import Page3 from '@/components/children/page3/zhuanlan'
+import Page4 from '@/components/children/page4/shoucang'
+import Page5 from '@/components/children/page5/find'
+import Login from '@/components/children/login/login'
 
 Vue.use(Router)
 
@@ -21,32 +21,35 @@ export default new Router({
       		path:'/',
       		component:Header,
       		children:[
-		      	{
-		      		path:'/page1',
-		      		component:Page1,
-		      	},
-		      	{
-		      		path:'/page2',
-		      		component:Page2,
-		      	},
-		      	{
-		      		path:'/page3',
-		      		component:Page1,
-		      	},
-		      	{
-		      		path:'/page4',
-		      		component:Page2,
-		      	},
-		      	{
-		      		path:'/login',
-		      		component:Login,
-		      		children:[
-				      	{
-				      		path:'first',
-				      		component:First
-				      	}
-				      ]
-		      	},
+      			{
+				      path: '/',
+				      component: Page,
+				    },
+      			{
+				      path: '/page',
+				      name:'page0',
+				      component: Page,
+				    },
+				    {
+				      path: '/page2',
+				      name:'page2',
+				      component: Page2,
+				    },
+				    {
+				      path: '/page3',
+				      name:'page3',
+				      component: Page3,
+				    },
+				    {
+				      path: '/page4',
+				      name:'page4',
+				      component: Page4,
+				    },
+				    {
+				      path: '/page5',
+				      name:'page5',
+				      component: Page5,
+				    },
 		      ]
       	}      
       ]
@@ -54,40 +57,23 @@ export default new Router({
     {
       path: '/home',    
       component: Home,
-      children:[      	   	
+      children:[
       	{
-		    	path: 'header',		     
-		      component: Header,
-		      children:[
-		      	{
-		      		path:'/page1',
-		      		component:Page1,
-		      	},
-		      	{
-		      		path:'/page2',
-		      		component:Page2,
-		      	},
-		      	{
-		      		path:'/page3',
-		      		component:Page1,
-		      	},
-		      	{
-		      		path:'/page4',
-		      		component:Page2,
-		      	},
-		      	{
-		      		path:'/login',
-		      		component:Login,
-		      		children:[
-				      	{
-				      		path:'first',
-				      		component:First
-				      	}
-				      ]
-		      	},
-		      ]
-		    }
-      ]      
-    }
+      		path:'/',
+      		component:Header,
+      		children:[
+      			{
+				      path: '/',
+				      component: Page,
+				    },
+      			{
+				      path: '/page',
+				      name:'page',
+				      component: Page,
+				    },
+				  ]
+      	}      
+      ]
+    },
   ]
 })
