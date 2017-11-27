@@ -1,5 +1,5 @@
 <template>
-  <div id="app"> 
+  <div id="app">
     <router-view></router-view>
   </div>
 </template>
@@ -10,7 +10,7 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: 'LMML',
+      msg: 'LMML',      
     }
   },  
 }
