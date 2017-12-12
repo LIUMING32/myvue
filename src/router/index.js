@@ -8,6 +8,7 @@ import Page3 from '@/components/children/page3/zhuanlan'
 import Page4 from '@/components/children/page4/shoucang'
 import Page5 from '@/components/children/page5/find'
 import Login from '@/components/children/login/login'
+import Child from '@/components/children/page3/child/child'
 
 Vue.use(Router)
 
@@ -74,6 +75,10 @@ export default new Router({
 				  ]
       	}      
       ]
+    },
+    {
+      path: '/child',    
+      component: Child,
     },
   ]
 })

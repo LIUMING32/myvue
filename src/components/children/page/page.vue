@@ -1,15 +1,15 @@
 <template>
-	<div class="contain">		
+	<div class="contain" >
+		<div class="clearfix"></div>
 		<div class="block">
-		    <!--<span class="demonstration">默认 Hover 指示器触发</span>-->
 		    <el-carousel height="660px">
 		      <el-carousel-item v-for="(item, index) in items" :key="item.index">
 		      	<img :src="item.imgUrl" alt="" />
 		      </el-carousel-item>
 		    </el-carousel>
 		</div>
-		<div style="width:42%;margin: 0 auto;">
-			<el-container>
+		<div style="max-width: 960px;margin: 0 auto;">
+			<el-container >
 			    <el-main>
 			  	    <el-tabs v-model="activeName" @tab-click="handleClick">
 					    <el-tab-pane label="用户管理" name="first">
@@ -20,7 +20,7 @@
 					    <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
 				    </el-tabs>
 			    </el-main>
-			  <el-aside width="200px">
+			  	<el-aside width="200px">
 			  	<el-card class="box-card">
 				  <div slot="header" class="clearfix">
 				    <span>热门标签</span>
@@ -78,6 +78,7 @@ export default {
 <style scoped>
 	ul{padding: 0px;}
 	li{list-style: none;}
+	hr{visibility: hidden;margin-bottom: 0px;margin-top: 10px;}
 	.el-carousel__item h3 {
 	    color: #475669;
 	    font-size: 14px;
@@ -100,7 +101,7 @@ export default {
     /*line-height: 200px;*/
     margin:20px 0px;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.03);
-  }
+   }
   
    .el-main {
     /*background-color: #f4f5f6;*/

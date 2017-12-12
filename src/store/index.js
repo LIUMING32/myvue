@@ -5,7 +5,7 @@ Vue.use(Vuex);
 const store = new Vuex.Store({
     state:{
         massage:"",
-        aTodos:[{value:"默认",id:0}],
+        aTodos:[{value:"我是小星",id:0}],
     },
     getters:{
         nCounts(state){

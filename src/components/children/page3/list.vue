@@ -1,12 +1,19 @@
 <template>
-	<div class="todolist">
-      <ul class="list-group">
-        <li class="list-group-item" v-for="(item,index) in aTodos" >
-            <span>{{item.value}}</span>
-            <button class="btn btn-default"  @click="delItem(index)">删除</button>
-        </li>
-       </ul>
-    </div>
+	<div>
+		<div class="todolist">
+	      <ul class="list-group">
+	        <li class="list-group-item" v-for="(item,index) in aTodos" >
+	            <span >{{item.value}}</span>
+	            <button class="btn btn-default"  @click="delItem(index)" >删除</button>
+	        </li>
+	       </ul>
+	    </div>
+	    <div>
+	    	
+	    </div>
+		
+	</div>
+	
 </template>
 
 <script>
@@ -26,9 +33,6 @@ export default {
   	delItem(index){
   		console.log(this.store);
   		this.$store.dispatch('onDelTodo',index);  
-  	},
-  	del(){
-  		console.log("这是一个测试");
   	}
   }  
 }

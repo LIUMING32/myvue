@@ -1,6 +1,6 @@
 <template>
-	<div>
-		<header class="header">
+	<div class="header">
+		<div style="max-width: 960px;margin: 0 auto;">
 			<h1 class="in-block log" ><router-link id="logo" to="/home"><img src="../assets/logoSmall.png"/></router-link></h1>				
 			<el-menu :default-active="activeIndex" class="el-menu-demo in-block" mode="horizontal" @select="handleSelect">
 			  <el-menu-item index="1"><router-link id="page" to="/page">{{pag}}</router-link></el-menu-item>
@@ -15,12 +15,12 @@
 			  <el-menu-item index="5"><router-link id="page5" to="/page5">{{pag5}}</router-link></el-menu-item>			  
 			 <!-- <el-menu-item v-for="item in links"><router-link @click="$goRoute(item.route)">{{item.text}}</router-link></el-menu-item>-->
 			</el-menu>
-			<div class="in-block">
+			<div class="in-block" style="float: right;">
 				<el-input placeholder="请输入内容" prefix-icon="el-icon-search" v-model="input21" > </el-input>
-				<el-button type="text" @click="centerDialogVisible = true">登录/注册</el-button>
+				<el-button type="text" @click="centerDialogVisible = true" >登录/注册</el-button>
 			</div>
-		    <router-view> </router-view>
-		</header>
+		</div>
+	    <router-view> </router-view>
 		<div>
 			<el-dialog title="" :visible.sync="centerDialogVisible" width="30%" center>
 				<h1>{{ msg }}</h1>
@@ -36,9 +36,7 @@
 	</div>
 </template>
 <script>
-	
-	
-	
+
 export default {
   name: 'header',
   data () {
@@ -73,7 +71,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	h1{text-align: center;}
-	.log{margin:0px 30px 0px 0px;}
+	.log{margin:0px 30px 0px 0px;float: left;}
 	.header{padding: 10px; }	
 	.in-block{display: inline-block;vertical-align: middle}
 	.el-menu--horizontal {border-bottom:0px;}

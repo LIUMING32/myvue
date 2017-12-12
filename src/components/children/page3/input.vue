@@ -1,8 +1,13 @@
 <template>
-	<div class="form-group ">
+	<!--<div class="form-group ">
       <input type="text" class="form-control"  placeholder="" v-model="value"  />
       <button type="buttom" class="btn btn-default" @click="addItem">Add Item</button>
-    </div>
+    </div>-->
+    <div style="margin-top: 15px;">
+	  <el-input placeholder="请输入内容" v-model="value">
+	    <template slot="append"><el-button @click="addItem">添加</el-button></template>
+	  </el-input>
+	</div>
 </template>
 
 <script>
