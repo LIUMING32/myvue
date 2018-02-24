@@ -1,6 +1,6 @@
 # myvue
 
-> A Vue.js project
+> A Vue.js project,learn for vue
 
 ## Build Setup
 
