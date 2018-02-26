@@ -7,14 +7,8 @@
 			<!--    <router-view/>-->
 		 <div class="clearfix"></div>
 			<div style="max-width: 960px;margin: 0 auto;">
-				<el-container >
-					<el-aside width="200px">
-						<tree :model="root" :length="length"></tree>
-			  	</el-aside>
-			    <el-main style="margin:20px 0px 20px 20px;">
-			    	<Tables></Tables>
-			    </el-main>
-				</el-container>
+				<tree :model="root" :length="length"></tree>
+				<Tables></Tables>
 			</div>
   	</div>
   </div>

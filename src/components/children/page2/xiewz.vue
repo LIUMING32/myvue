@@ -1,7 +1,7 @@
 <template>
-	<header class="header">		
+	<div style="padding: 10px;">
 		{{navs}}
-	</header>
+	</div>
 </template>
 
 <script>

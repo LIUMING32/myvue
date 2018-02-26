@@ -1,7 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 Vue.use(Vuex);
-
+//import axios from 'axios'
 const store = new Vuex.Store({
     state:{
         massage:"",
@@ -27,6 +27,14 @@ const store = new Vuex.Store({
         }
     },
     actions:{
+    	// 封装一个 ajax 方法
+//		save (context) {
+//		  axios({
+//		  method: 'get',
+//		  url: '/user',
+//		  data: context.state.test02
+//		  })
+//		 },
         //提交 ONADDTODO
         onAddTodo(context,item){
             if(item.value!=""){

@@ -7,13 +7,14 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import Vuex from 'vuex'
 import store from './store'
+//import axios from 'axios';
 
 Vue.use(ElementUI)
 Vue.use(Vuex)
 Vue.use(store)
 
 Vue.config.productionTip = false
-
+Vue.prototype.$axios = axios
 // 路由跳转
 Vue.prototype.$goRoute = function (index) {
   this.$router.push(index)
@@ -23,6 +24,7 @@ Vue.prototype.$goRoute = function (index) {
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  ElementUI,
   router,
   store,
   template: '<App/>',

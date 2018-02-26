@@ -1,0 +1,20 @@
+
+{
+	"banner":[
+		{
+		"img": "../../src/assets/beijiaer.jpeg"
+		},
+		{
+		"img": "../../src/assets/bilishi.jpeg"
+		},
+		{
+		"img": "../../src/assets/maple.jpeg"
+		},
+		{
+		"img": "../../src/assets/ruishi.jpeg"
+		}
+	],
+	"test":[
+		{"test":"123"}
+	]
+}
